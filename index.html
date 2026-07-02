@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal AI Study Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode"> <div class="app-container">
+        <aside class="sidebar glass">
+            <div class="sidebar-header">
+                <h2>AI Study Guide</h2>
+                <div class="progress-wrapper">
+                    <div class="progress-ring-container">
+                        <svg class="progress-ring" width="60" height="60">
+                            <circle class="progress-ring__circle-bg" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+                            <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+                        </svg>
+                        <span id="progress-text">0%</span>
+                    </div>
+                </div>
+            </div>
+            <nav id="curriculum-nav" class="curriculum-nav">
+                </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="lesson-meta">
+                    <span id="module-label" class="badge">Módulo 1</span>
+                    <h1 id="lesson-title">Carregando...</h1>
+                </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg id="sun-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+            </header>
+
+            <div class="content-scroll fade-in">
+                <section id="video-container" class="video-section">
+                    </section>
+
+                <section class="notes-section glass">
+                    <div class="notes-header">
+                        <h3>Method Notes</h3>
+                        <p class="instruction">Glock System: Digite pelo menos 50 caracteres para fixar o aprendizado e liberar a próxima aula.</p>
+                    </div>
+                    <textarea id="notes-editor" placeholder="Sintetize os principais insights desta aula..."></textarea>
+                    
+                    <div class="actions-bar">
+                        <div class="char-counter">
+                            <span id="char-count">0</span> / 50 min
+                        </div>
+                        <button id="next-btn" class="btn-primary" disabled>
+                            Próxima Aula
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
