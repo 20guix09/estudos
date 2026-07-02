@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import StudyView from './components/StudyView';
+import StudyView from 'StudyView';
 
 // --- DATA STRUCTURE ---
 const COURSE_DATA = [
